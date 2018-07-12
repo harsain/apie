@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Helvetica", Arial, sans-serif;
+}
+
+a {
+  color: #001eff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 15%;
+}
+
+table thead td {
+  border: solid 1px #003333;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+table tbody td {
+  border: solid 1px #003333;
+  padding: 10px;
+}

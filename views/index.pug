@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p below is the list of all the links avaiable
+  //- ul
+  //-   each val, index in routes
+  //-     li= "path:" + val.path + "  | methods:" + val.methods
+  table
+    thead
+      td="#"
+      td="Route"
+      td="Methods"
+      td="Link"
+    tb
+      each val, index in routes
+        tr
+          td=index
+          each elem in val
+            td= elem
+          td
+            a(href=val.path)  #{val.path}

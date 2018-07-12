@@ -1,0 +1,43 @@
+{
+  "tweets": [
+    {
+      "id": 1,
+      "text": "this is a test tweet 1"
+    },
+    {
+      "id": 2,
+      "text": "this is a test tweet 2"
+    },
+    {
+      "id": 3,
+      "text": "this is a test tweet 3"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "post": "this is 1 post",
+      "description": "this is description of post 1"
+    },
+    {
+      "id": 2,
+      "post": "this is 2 post",
+      "description": "this is description of post 2"
+    },
+    {
+      "id": 3,
+      "post": "this is 3 post",
+      "description": "this is description of post 3"
+    },
+    {
+      "id": 4,
+      "post": "this is 4 post",
+      "description": "this is description of post 4"
+    },
+    {
+      "id": 5,
+      "post": "this is 5 post",
+      "description": "this is description of post 5"
+    }
+  ]
+}
