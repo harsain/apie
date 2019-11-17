@@ -13,6 +13,7 @@ fs.readFile("./db.json", "utf8", (err, data) => {
   validateDBSchema(data);
   entities = Object.keys(data);
   entities.forEach(element => {
+
     router.get("/" + element, function(req, res) {
       res.send(data[element]);
     });
@@ -30,6 +31,21 @@ fs.readFile("./db.json", "utf8", (err, data) => {
         res.send(response);
       }
     });
+
+    elementKeys = Object.keys(data[element][0]);
+    console.debug(elementKeys);
+    elementKeys.forEach(elementKey => {
+      entities.forEach(entity => {
+        if (elementKey == entity + "_id") {
+          console.log("------------------")
+          console.log("MATCHED")
+          console.debug(elementKey);
+          console.debug(entity);
+          console.log("------------------")
+        }
+      })
+    })
+
   });
 });
 

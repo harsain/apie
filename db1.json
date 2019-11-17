@@ -1,22 +1,19 @@
 {
-  "person": [
+  "tweets": [
     {
       "id": 1,
-      "name": "this is a test tweet 1",
-      "company_id": 1
+      "text": "this is a test tweet 1"
     },
     {
       "id": 2,
-      "name": "this is a test tweet 2",
-      "company_id": 2
+      "text": "this is a test tweet 2"
     },
     {
       "id": 3,
-      "name": "this is a test tweet 3",
-      "company_id": 3
+      "text": "this is a test tweet 3"
     }
   ],
-  "company": [
+  "posts": [
     {
       "id": 1,
       "post": "this is 1 post",
