@@ -33,19 +33,30 @@ fs.readFile("./db.json", "utf8", (err, data) => {
     });
 
     elementKeys = Object.keys(data[element][0]);
-    console.debug(elementKeys);
-    elementKeys.forEach(elementKey => {
-      entities.forEach(entity => {
-        if (elementKey == entity + "_id") {
-          console.log("------------------")
-          console.log("MATCHED")
-          console.debug(elementKey);
-          console.debug(entity);
-          console.log("------------------")
-        }
-      })
-    })
-
+    console.log(element);
+    console.log(JSON.stringify(entities));
+    entities.forEach(entity => {
+      if (data[entity][0][element+"_id"]) {
+        console.log("FOUND in entity " + entity + " -  id: " + element+"_id" );
+        router.get("/"+entity + "/:id/"+element, function(req, res) {
+          response = _.find(data[entity], {id: parseInt(req.params.id)});
+          if (response === undefined) {
+            res.render("error", {
+              error: {
+                status: 400,
+                stack: entity + " with ID: " + req.params.id + " not found"
+              }
+            });
+          } else {
+            let key = element + "_id";
+            sec_response = _.find(data[element], {id: parseInt(response[key])});
+            // response[element] = sec_response;
+            // delete response[element+"_id"];
+            res.send(sec_response);
+          }
+        });
+      }
+    });
   });
 });
 

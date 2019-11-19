@@ -2,45 +2,45 @@
   "person": [
     {
       "id": 1,
-      "name": "this is a test tweet 1",
+      "name": "person 1",
       "company_id": 1
     },
     {
       "id": 2,
-      "name": "this is a test tweet 2",
+      "name": "person 2",
       "company_id": 2
     },
     {
       "id": 3,
-      "name": "this is a test tweet 3",
+      "name": "person 3",
       "company_id": 3
     }
   ],
   "company": [
     {
       "id": 1,
-      "post": "this is 1 post",
-      "description": "this is description of post 1"
+      "name": "company 1",
+      "description": "this is description of company 1"
     },
     {
       "id": 2,
-      "post": "this is 2 post",
-      "description": "this is description of post 2"
+      "name": "company 2",
+      "description": "this is description of company 2"
     },
     {
       "id": 3,
-      "post": "this is 3 post",
-      "description": "this is description of post 3"
+      "name": "company 3",
+      "description": "this is description of company 3"
     },
     {
       "id": 4,
-      "post": "this is 4 post",
-      "description": "this is description of post 4"
+      "name": "company 4",
+      "description": "this is description of company 4"
     },
     {
       "id": 5,
-      "post": "this is 5 post",
-      "description": "this is description of post 5"
+      "name": "company 4",
+      "description": "this is description of company 5"
     }
   ]
 }
